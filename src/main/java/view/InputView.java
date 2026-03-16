@@ -49,7 +49,7 @@ public class InputView {
         System.out.printf("%s의 배팅 금액은?%n", playerName);
         String input = readInput(List.of(
                 Validator::validateNotBlank,
-                NumberRangeValidator.createPositiveRange()
+                NumberRangeValidator.createPositiveRangeWithEndInclusive(Bet.MAX_BETTING_AMOUNT)
         ));
 
         return new Bet(Long.parseLong(input));

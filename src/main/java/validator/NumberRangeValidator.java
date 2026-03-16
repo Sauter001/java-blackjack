@@ -21,6 +21,10 @@ public class NumberRangeValidator implements Validator {
         return new NumberRangeValidator(POSITIVE_MIN, Long.MAX_VALUE);
     }
 
+    public static Validator createPositiveRangeWithEndInclusive(long endInclusive) {
+        return new NumberRangeValidator(POSITIVE_MIN, endInclusive);
+    }
+
     @Override
     public void validate(String input) {
         try {

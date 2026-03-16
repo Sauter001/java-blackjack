@@ -3,8 +3,8 @@ package domain.participant;
 import exception.OutOfRangeException;
 
 public record Bet(long amount) {
-    private static final int MIN_BETTING_AMOUNT = 1;
-    private static final long MAX_BETTING_AMOUNT = 300_000;
+    public static final int MIN_BETTING_AMOUNT = 1;
+    public static final long MAX_BETTING_AMOUNT = 300_000;
 
     public Bet {
         validateAmount(amount);
