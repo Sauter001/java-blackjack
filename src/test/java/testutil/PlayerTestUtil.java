@@ -11,7 +11,7 @@ import domain.participant.Players;
 import java.util.List;
 
 public final class PlayerTestUtil {
-    public static final long DEFAULT_BET_AMOUNT = 2_000_000;
+    public static final long DEFAULT_BET_AMOUNT = 200_000;
     private static final List<Card> BLACKJACK_CARDS = List.of(
             new Card(CardShape.SPADE, CardRank.ACE),
             new Card(CardShape.HEART, CardRank.TEN)
