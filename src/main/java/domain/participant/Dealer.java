@@ -15,6 +15,6 @@ public class Dealer extends Participant {
     }
 
     public Card getFirstCard() {
-        return hand.getFirst();
+        return getCards().getFirst();
     }
 }

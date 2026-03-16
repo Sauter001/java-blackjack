@@ -8,8 +8,8 @@ import domain.card.Hand;
 import java.util.List;
 
 public abstract class Participant {
-    protected final Hand hand = new Hand();
     protected final String name;
+    private final Hand hand = new Hand();
 
     public Participant(String name) {
         this.name = name;
